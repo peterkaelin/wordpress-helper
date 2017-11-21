@@ -12,11 +12,11 @@ if ( ! isset( $content_width ) )
     $content_width = 750; /* pixels */
 
 
-if ( ! function_exists( 'websamurai_setup' ) ) :
+if ( ! function_exists( 'origin_setup' ) ) :
     /**
      * Set up theme defaults and register support for various WordPress features.
      */
-    function websamurai_setup() {
+    function origin_setup() {
         /**
          * This theme styles the visual editor with editor-style.css to match the theme style.
          */
@@ -35,7 +35,7 @@ if ( ! function_exists( 'websamurai_setup' ) ) :
         /**
          * Setup the WordPress core custom background feature.
          */
-        add_theme_support( 'custom-background', apply_filters( 'websamurai_custom_background_args', array(
+        add_theme_support( 'custom-background', apply_filters( 'origin_custom_background_args', array(
             'default-color' => 'ffffff',
             'default-image' => '',
         ) ) );
@@ -44,13 +44,13 @@ if ( ! function_exists( 'websamurai_setup' ) ) :
          * Make theme available for translation
          * Translations can be filed in the /languages/ directory (e.g. de_DE.po and de_DE.mo)
          */
-        load_theme_textdomain( 'websamurai', get_template_directory() . '/languages' );
+        load_theme_textdomain( 'origin', get_template_directory() . '/languages' );
 
         /**
          * Define WP nav menus
          */
         register_nav_menus( array(
-            'primary'  => __( 'Main menu', 'websamurai' ),
+            'primary'  => __( 'Main menu', 'origin' ),
         ) );
 
         /**
@@ -59,73 +59,73 @@ if ( ! function_exists( 'websamurai_setup' ) ) :
         add_image_size( 'header', 1680, 600, true ); // true: crop it
 
     }
-endif; // websamurai_setup
-add_action( 'after_setup_theme', 'websamurai_setup' );
+endif; // origin_setup
+add_action( 'after_setup_theme', 'origin_setup' );
 
 
 /**
  * Register widgetized area and update sidebar with default widgets.
  */
-function websamurai_widgets_init() {
+function origin_widgets_init() {
     register_sidebar( array(
-        'name'          => esc_html__( 'Sidebar', 'websamurai' ),
+        'name'          => esc_html__( 'Sidebar', 'origin' ),
         'id'            => 'sidebar-1',
-        'description'   => esc_html__( 'Add widgets here.', 'websamurai' ),
+        'description'   => esc_html__( 'Add widgets here.', 'origin' ),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget'  => '</section>',
         'before_title'  => '<h2 class="widget-title">',
         'after_title'   => '</h2>',
     ) );
     register_sidebar( array(
-        'name'          => esc_html__( 'Footer', 'websamurai' ),
+        'name'          => esc_html__( 'Footer', 'origin' ),
         'id'            => 'footer-1',
-        'description'   => esc_html__( 'Add widgets here.', 'websamurai' ),
+        'description'   => esc_html__( 'Add widgets here.', 'origin' ),
         'before_widget' => '<section id="%1$s" class="widget col-md-4 col-sm-6 %2$s">',
         'after_widget'  => '</section>',
         'before_title'  => '<h2 class="widget-title">',
         'after_title'   => '</h2>',
     ) );
 }
-add_action( 'widgets_init', 'websamurai_widgets_init' );
+add_action( 'widgets_init', 'origin_widgets_init' );
 
 
 /**
  * Enqueue scripts and styles.
  */
-function websamurai_scripts() {
-    wp_enqueue_style( 'websamurai-style', get_stylesheet_uri(), array(), '1.0' );
+function origin_scripts() {
+    wp_enqueue_style( 'origin-style', get_stylesheet_uri(), array(), '1.0' );
 
     wp_enqueue_script('bootstrapjs', get_template_directory_uri().'/includes/resources/bootstrap/js/bootstrap.min.js', array('jquery') );
 }
-add_action( 'wp_enqueue_scripts', 'websamurai_scripts' );
+add_action( 'wp_enqueue_scripts', 'origin_scripts' );
 
 
 /**
  * Register post types
  *
  */
-function websamurai_init() {
+function origin_init() {
 
     // Register custom post type: Portfolio
     $labels = array(
-        'name'               => esc_html_x( 'Portfolio', 'post type general name', 'websamurai' ),
-        'singular_name'      => esc_html_x( 'Abstract', 'post type singular name', 'websamurai' ),
-        'menu_name'          => esc_html__( 'Portfolio', 'websamurai' ),
-        'name_admin_bar'     => esc_html__( 'Abstract', 'websamurai' ),
-        'add_new'            => esc_html__( 'Add New', 'websamurai' ),
-        'add_new_item'       => sprintf( esc_html__( 'Add New %s', 'websamurai' ), esc_html__( 'Abstract', 'websamurai' ) ),
-        'new_item'           => sprintf( esc_html__( 'New %s', 'websamurai' ), esc_html__( 'Abstract', 'websamurai' ) ),
-        'edit_item'          => sprintf( esc_html__( 'Edit %s', 'websamurai' ), esc_html__( 'Abstract', 'websamurai' ) ),
-        'view_item'          => sprintf( esc_html__( 'View %s', 'websamurai' ), esc_html__( 'Abstract', 'websamurai' ) ),
-        'all_items'          => sprintf( esc_html__( 'All %s', 'websamurai' ), esc_html__( 'Portfolio', 'websamurai' ) ),
-        'search_items'       => sprintf( esc_html__( 'Search %s', 'websamurai' ), esc_html__( 'Portfolio', 'websamurai' ) ),
-        'parent_item_colon'  => sprintf( esc_html__( 'Parent %s:', 'websamurai' ), esc_html__( 'Portfolio', 'websamurai' ) ),
-        'not_found'          => sprintf( esc_html__( 'No %s found.', 'websamurai' ), esc_html__( 'Abstract', 'websamurai' ) ),
-        'not_found_in_trash' => sprintf( esc_html__( 'No %s found in Trash.', 'websamurai' ), esc_html__( 'Abstract', 'websamurai' ) )
+        'name'               => esc_html_x( 'Portfolio', 'post type general name', 'origin' ),
+        'singular_name'      => esc_html_x( 'Abstract', 'post type singular name', 'origin' ),
+        'menu_name'          => esc_html__( 'Portfolio', 'origin' ),
+        'name_admin_bar'     => esc_html__( 'Abstract', 'origin' ),
+        'add_new'            => esc_html__( 'Add New', 'origin' ),
+        'add_new_item'       => sprintf( esc_html__( 'Add New %s', 'origin' ), esc_html__( 'Abstract', 'origin' ) ),
+        'new_item'           => sprintf( esc_html__( 'New %s', 'origin' ), esc_html__( 'Abstract', 'origin' ) ),
+        'edit_item'          => sprintf( esc_html__( 'Edit %s', 'origin' ), esc_html__( 'Abstract', 'origin' ) ),
+        'view_item'          => sprintf( esc_html__( 'View %s', 'origin' ), esc_html__( 'Abstract', 'origin' ) ),
+        'all_items'          => sprintf( esc_html__( 'All %s', 'origin' ), esc_html__( 'Portfolio', 'origin' ) ),
+        'search_items'       => sprintf( esc_html__( 'Search %s', 'origin' ), esc_html__( 'Portfolio', 'origin' ) ),
+        'parent_item_colon'  => sprintf( esc_html__( 'Parent %s:', 'origin' ), esc_html__( 'Portfolio', 'origin' ) ),
+        'not_found'          => sprintf( esc_html__( 'No %s found.', 'origin' ), esc_html__( 'Abstract', 'origin' ) ),
+        'not_found_in_trash' => sprintf( esc_html__( 'No %s found in Trash.', 'origin' ), esc_html__( 'Abstract', 'origin' ) )
     );
     $args = array(
         'labels'             => $labels,
-        'description'        => esc_html__( 'Description', 'websamurai' ),
+        'description'        => esc_html__( 'Description', 'origin' ),
         'public'             => true,
         'publicly_queryable' => true,
         'menu_icon'          => 'dashicons-category',
@@ -143,22 +143,22 @@ function websamurai_init() {
 
     // Regsiter Taxonomy: Portfolio categories
     $labels = array(
-        'name'                       => _x( 'Categories', 'portfolio category general name', 'websamurai' ),
-        'singular_name'              => _x( 'Category', 'portfolio category singular name', 'websamurai' ),
-        'search_items'               => sprintf( __( 'Search %s', 'websamurai' ), __( 'Categories', 'websamurai' ) ),
-        'popular_items'              => sprintf( __( 'Popular %s', 'websamurai' ), __( 'Categories', 'websamurai' ) ),
-        'all_items'                  => sprintf( __( 'All %s', 'websamurai' ), __( 'Categories', 'websamurai' ) ),
+        'name'                       => _x( 'Categories', 'portfolio category general name', 'origin' ),
+        'singular_name'              => _x( 'Category', 'portfolio category singular name', 'origin' ),
+        'search_items'               => sprintf( __( 'Search %s', 'origin' ), __( 'Categories', 'origin' ) ),
+        'popular_items'              => sprintf( __( 'Popular %s', 'origin' ), __( 'Categories', 'origin' ) ),
+        'all_items'                  => sprintf( __( 'All %s', 'origin' ), __( 'Categories', 'origin' ) ),
         'parent_item'                => null,
         'parent_item_colon'          => null,
-        'edit_item'                  => sprintf( __( 'Edit %s', 'websamurai' ), __( 'Category', 'websamurai' ) ),
-        'update_item'                => sprintf( __( 'Update %s', 'websamurai' ), __( 'Category', 'websamurai' ) ),
-        'add_new_item'               => sprintf( __( 'Add New %s', 'websamurai' ), __( 'Category', 'websamurai' ) ),
-        'new_item_name'              => sprintf( __( 'New %s Name', 'websamurai' ), __( 'Category', 'websamurai' ) ),
-        'separate_items_with_commas' => sprintf( __( 'Separate %s with commas', 'websamurai' ), __( 'Categories', 'websamurai' ) ),
-        'add_or_remove_items'        => sprintf( __( 'Add or remove %s', 'websamurai' ), __( 'Categories', 'websamurai' ) ),
-        'choose_from_most_used'      => sprintf( __( 'Choose from the most used %s', 'websamurai' ), __( 'Categories', 'websamurai' ) ),
-        'not_found'                  => sprintf( __( 'No %s found.', 'websamurai' ), __( 'Categories', 'websamurai' ) ),
-        'menu_name'                  => __( 'Categories', 'websamurai' ),
+        'edit_item'                  => sprintf( __( 'Edit %s', 'origin' ), __( 'Category', 'origin' ) ),
+        'update_item'                => sprintf( __( 'Update %s', 'origin' ), __( 'Category', 'origin' ) ),
+        'add_new_item'               => sprintf( __( 'Add New %s', 'origin' ), __( 'Category', 'origin' ) ),
+        'new_item_name'              => sprintf( __( 'New %s Name', 'origin' ), __( 'Category', 'origin' ) ),
+        'separate_items_with_commas' => sprintf( __( 'Separate %s with commas', 'origin' ), __( 'Categories', 'origin' ) ),
+        'add_or_remove_items'        => sprintf( __( 'Add or remove %s', 'origin' ), __( 'Categories', 'origin' ) ),
+        'choose_from_most_used'      => sprintf( __( 'Choose from the most used %s', 'origin' ), __( 'Categories', 'origin' ) ),
+        'not_found'                  => sprintf( __( 'No %s found.', 'origin' ), __( 'Categories', 'origin' ) ),
+        'menu_name'                  => __( 'Categories', 'origin' ),
     );
 
     $args = array(
@@ -173,7 +173,7 @@ function websamurai_init() {
 
     register_taxonomy( 'portfolio-category', 'portfolio', $args );
 }
-add_action( 'init', 'websamurai_init' );
+add_action( 'init', 'origin_init' );
 
 
 /**
@@ -209,36 +209,36 @@ remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head' );
 /**
  * Remove recent comments style from header.
  */
-function websamurai_remove_recent_comments_style() {
+function origin_remove_recent_comments_style() {
     global $wp_widget_factory;
     remove_action( 'wp_head', array( $wp_widget_factory->widgets['WP_Widget_Recent_Comments'], 'recent_comments_style'  ) );
 }
-add_action( 'widgets_init', 'websamurai_remove_recent_comments_style' );
+add_action( 'widgets_init', 'origin_remove_recent_comments_style' );
 
 
 /**
  * Add and remove Admin menu pages.
  */
-function websamurai_add_remove_menu_pages() {
+function origin_add_remove_menu_pages() {
     remove_menu_page( 'edit-comments.php' );
 }
-add_action( 'admin_menu', 'websamurai_add_remove_menu_pages' );
+add_action( 'admin_menu', 'origin_add_remove_menu_pages' );
 
 
 /**
  * Change login logo.
  */
-function websamurai_login_logo() { ?>
+function origin_login_logo() { ?>
     <style type="text/css">
         #login h1 a, .login h1 a {
-            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/websamurai.png);
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/origin.png);
             width: 100%;
             height: 207px;
             background-size: contain;
         }
     </style>
 <?php }
-add_action( 'login_enqueue_scripts', 'websamurai_login_logo' );
+add_action( 'login_enqueue_scripts', 'origin_login_logo' );
 
 
 /**
@@ -246,21 +246,21 @@ add_action( 'login_enqueue_scripts', 'websamurai_login_logo' );
  *
  * @param mixed $wp_admin_bar
  */
-function websamurai_remove_wp_logo( $wp_admin_bar ) {
+function origin_remove_wp_logo( $wp_admin_bar ) {
     $wp_admin_bar->remove_node( 'wp-logo' );
 }
-add_action( 'admin_bar_menu', 'websamurai_remove_wp_logo', 999 );
+add_action( 'admin_bar_menu', 'origin_remove_wp_logo', 999 );
 
 
 /**
  * Fix for Yoimage image cropping
  * because Yoimage save button jumps around while clicking it
  */
-function websamurai_admin_css_yooimage_fix() {
+function origin_admin_css_yooimage_fix() {
     echo '<style>
         .attachment-details {
             overflow-y: hidden;
         }
     </style>';
 }
-add_action( 'admin_head', 'websamurai_admin_css_yooimage_fix' );
+add_action( 'admin_head', 'origin_admin_css_yooimage_fix' );
