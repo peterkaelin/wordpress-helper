@@ -1,0 +1,506 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wirkungsstark v1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-23 21:10+0100\n"
+"PO-Revision-Date: 2017-05-23 21:10+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
+"esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-Basepath: ../\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Hoppla! Diese Seite konnte nicht gefunden werden."
+
+# @ wirkungsstark
+#: 404.php:21
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+"Es konnte nichts gefunden werden. Eventuell hilft Ihnen die Suche weiter?"
+
+# @ wirkungsstark
+#: comments.php:26
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Ein Kommentar zu &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s Kommentare zu &ldquo;%2$s&rdquo;"
+
+# @ wirkungsstark
+#: comments.php:35 comments.php:56
+msgid "Comment navigation"
+msgstr "Kommentar Navigation"
+
+# @ wirkungsstark
+#: comments.php:38 comments.php:59
+msgid "Older Comments"
+msgstr "Ältere Kommentare"
+
+# @ wirkungsstark
+#: comments.php:39 comments.php:60
+msgid "Newer Comments"
+msgstr "Neuere Kommentare"
+
+# @ wirkungsstark
+#: comments.php:73
+msgid "Comments are closed."
+msgstr "Kommentare sind geschlossen."
+
+# @ wirkungsstark
+#: frontpage.php:20 template-parts/content-page.php:20
+msgid "Pages:"
+msgstr "Seiten:"
+
+#: frontpage.php:47 inc/class.frontpage_meta_box.php:48
+msgid "Features"
+msgstr "Angebote"
+
+#: frontpage.php:75
+msgid "More"
+msgstr "Weiter"
+
+#: frontpage.php:100 inc/class.beautiful_news_widget.php:76
+msgid "News"
+msgstr "News"
+
+#: functions.php:30
+msgid "Primary"
+msgstr "Hauptmenü"
+
+#: functions.php:90 functions.php:92 functions.php:99 functions.php:100
+#: functions.php:101
+msgid "Employees"
+msgstr "Mitarbeiter"
+
+#: functions.php:91 functions.php:93 functions.php:95 functions.php:96
+#: functions.php:97 functions.php:98 functions.php:102 functions.php:103
+msgid "Employee"
+msgstr "Mitarbeiter"
+
+#: functions.php:94 functions.php:133 functions.php:155 functions.php:190
+msgid "Add New"
+msgstr "Erstellen"
+
+#: functions.php:95 functions.php:156 functions.php:191 functions.php:230
+#, php-format
+msgid "Add New %s"
+msgstr "%s erstellen"
+
+#: functions.php:96 functions.php:157 functions.php:192
+#, php-format
+msgid "New %s"
+msgstr "Neu %s"
+
+# @ wirkungsstark
+#: functions.php:97 functions.php:158 functions.php:193 functions.php:228
+#: inc/template-tags.php:60 template-parts/content-page.php:31
+#, php-format
+msgid "Edit %s"
+msgstr "%s bearbeiten"
+
+#: functions.php:98 functions.php:159 functions.php:194
+#, php-format
+msgid "View %s"
+msgstr "%s anschauen"
+
+#: functions.php:99 functions.php:160 functions.php:195 functions.php:225
+#, php-format
+msgid "All %s"
+msgstr "Alle %s"
+
+#: functions.php:100 functions.php:161 functions.php:196 functions.php:223
+#, php-format
+msgid "Search %s"
+msgstr "%s suchen"
+
+#: functions.php:101 functions.php:162 functions.php:197
+#, php-format
+msgid "Parent %s:"
+msgstr "Übergeordnet %s"
+
+#: functions.php:102 functions.php:163 functions.php:198 functions.php:235
+#, php-format
+msgid "No %s found."
+msgstr "Keine %s gefunden."
+
+#: functions.php:103 functions.php:164 functions.php:199
+#, php-format
+msgid "No %s found in Trash."
+msgstr "Keine %s im Papierkorb gefunden."
+
+#: functions.php:107 functions.php:168 functions.php:203
+msgid "Description"
+msgstr "Beschreibung"
+
+#: functions.php:125 functions.php:127 functions.php:128 functions.php:135
+msgid "Departments"
+msgstr "Abteilungen"
+
+#: functions.php:126 functions.php:129 functions.php:130 functions.php:131
+#: functions.php:132 functions.php:133 functions.php:134
+msgid "Department"
+msgstr "Abteilung"
+
+#: functions.php:127
+msgid "Search"
+msgstr "Suchen"
+
+#: functions.php:128
+msgid "All"
+msgstr "Alle"
+
+#: functions.php:129 functions.php:130
+msgid "Parent"
+msgstr "Übergeordnet"
+
+# @ wirkungsstark
+#: functions.php:131
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: functions.php:132
+msgid "Update"
+msgstr "Aktualisieren"
+
+#: functions.php:134 functions.php:231
+#, php-format
+msgid "New %s Name"
+msgstr "Neu %s Name"
+
+#: functions.php:151 functions.php:160 functions.php:161 functions.php:162
+msgid "Slides"
+msgstr "Slides"
+
+#: functions.php:152 functions.php:154 functions.php:156 functions.php:157
+#: functions.php:158 functions.php:159 functions.php:163 functions.php:164
+msgid "Slide"
+msgstr "Slide"
+
+#: functions.php:153
+msgid "Slider"
+msgstr "Slider"
+
+#: functions.php:186 functions.php:188 functions.php:195 functions.php:196
+#: functions.php:197
+msgid "Portfolios"
+msgstr "Portfolios"
+
+#: functions.php:187 functions.php:189 functions.php:191 functions.php:192
+#: functions.php:193 functions.php:194 functions.php:198 functions.php:199
+msgid "Portfolio"
+msgstr "Portfolio"
+
+#: functions.php:221
+msgctxt "portfolio category general name"
+msgid "Categories"
+msgstr "Kategorien"
+
+#: functions.php:222
+msgctxt "portfolio category singular name"
+msgid "Category"
+msgstr "Kategorie"
+
+#: functions.php:223 functions.php:224 functions.php:225 functions.php:232
+#: functions.php:233 functions.php:234 functions.php:235 functions.php:236
+msgid "Categories"
+msgstr "Kategorien"
+
+#: functions.php:224
+#, php-format
+msgid "Popular %s"
+msgstr "Populäre %s"
+
+#: functions.php:228 functions.php:229 functions.php:230 functions.php:231
+msgid "Category"
+msgstr "Kategorie"
+
+#: functions.php:229
+#, php-format
+msgid "Update %s"
+msgstr "%s aktualisieren"
+
+#: functions.php:232
+#, php-format
+msgid "Separate %s with commas"
+msgstr "%s mit einem Komma trennen"
+
+#: functions.php:233
+#, php-format
+msgid "Add or remove %s"
+msgstr "%s hinzufügen oder entfernen"
+
+#: functions.php:234
+#, php-format
+msgid "Choose from the most used %s"
+msgstr "Von den am meisten verwendeten %s auswählen"
+
+# @ wirkungsstark
+#: functions.php:270
+msgid "Sidebar"
+msgstr "Sidebar"
+
+#: functions.php:272 functions.php:281
+msgid "Add widgets here."
+msgstr "Widgets hier hinzufügen."
+
+#: functions.php:279
+msgid "Footer"
+msgstr "Fusszeile"
+
+#: header.php:20
+msgid "Skip to content"
+msgstr "Weiter zum Inhalt"
+
+#: header.php:138
+msgid "Route planner"
+msgstr "Routenplaner"
+
+# @ wirkungsstark
+#: search.php:17
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Suchergebnisse f&uuml;r: %s"
+
+#: inc/class.beautiful_news_widget.php:13
+msgid "Beautiful News"
+msgstr "Schöne News"
+
+#: inc/class.beautiful_news_widget.php:14
+msgid "A beautiful news widget"
+msgstr "Das Widget für schön dargestellte News"
+
+#: inc/class.contact_meta_box.php:41
+msgid "Contact data"
+msgstr "Kontaktangaben"
+
+#: inc/class.contact_meta_box.php:70
+msgid "Company"
+msgstr "Firma"
+
+#: inc/class.contact_meta_box.php:74
+msgid "Street"
+msgstr "Strasse"
+
+#: inc/class.contact_meta_box.php:78
+msgid "ZIP/City"
+msgstr "PLZ/Ort"
+
+#: inc/class.contact_meta_box.php:85
+msgid "Coordinates"
+msgstr "Koordinaten"
+
+#: inc/class.contact_meta_box.php:87
+msgid "Longitude"
+msgstr "Längengrad"
+
+#: inc/class.contact_meta_box.php:88
+msgid "Latitude"
+msgstr "Breitengrad"
+
+#: inc/class.contact_meta_box.php:89
+msgid "Click here to get the coordinates"
+msgstr "Hier klicken um die Koordinaten zu ermitteln"
+
+#: inc/class.contact_person_widget.php:13
+#: inc/class.contact_person_widget.php:87
+msgid "Contact person"
+msgstr "Kontaktperson"
+
+#: inc/class.contact_person_widget.php:14
+msgid "Widget shows the contact person of a page, if one is selected."
+msgstr ""
+"Dieses Widget zeigt die Kontaktperson der aktuellen Seite an, falls eine "
+"ausgewählt ist."
+
+#: inc/class.contact_person_widget.php:55
+msgid "I look forward to your call on tel."
+msgstr "Ich freue mich auf Ihren unverbindlichen Anruf unter Tel."
+
+#: inc/class.contact_person_widget.php:58
+msgid "Or send me an email on"
+msgstr "Oder schreiben Sie mir ein E-Mail auf"
+
+#: inc/class.contact_person_widget.php:61
+msgid "Request callback"
+msgstr "Rückruf vereinbaren"
+
+#: inc/class.contact_person_widget.php:63
+msgid "Contact form"
+msgstr "Kontaktformular"
+
+#: inc/class.contact_person_widget.php:95
+msgid "Contact page ID:"
+msgstr "ID der Kontaktseite:"
+
+#: inc/class.employee_meta_box.php:34
+msgid "Employee data"
+msgstr "Mitarbeiter Angaben"
+
+#: inc/class.employee_meta_box.php:60
+msgid "Function / Position"
+msgstr "Funktion / Position"
+
+#: inc/class.employee_meta_box.php:64
+msgid "Phone"
+msgstr "Telefon"
+
+#: inc/class.employee_meta_box.php:68
+msgid "Fax"
+msgstr "Fax"
+
+#: inc/class.employee_meta_box.php:72
+msgid "Email"
+msgstr "E-Mail"
+
+#: inc/class.frontpage_meta_box.php:71
+msgid "Features title"
+msgstr "Features Titel"
+
+#: inc/class.frontpage_meta_box.php:75
+msgid "Number features"
+msgstr "Anzahl Features"
+
+#: inc/class.frontpage_meta_box.php:78 inc/class.page_contact_meta_box.php:63
+msgid "None"
+msgstr "Keine"
+
+#: inc/class.frontpage_meta_box.php:99
+#, php-format
+msgid "Feature %d"
+msgstr "Feature %d"
+
+#: inc/class.frontpage_meta_box.php:102 inc/class.slider_meta_box.php:73
+#: inc/class.slider_meta_box.php:96
+msgid "Title"
+msgstr "Titel"
+
+#: inc/class.frontpage_meta_box.php:106
+msgid "Content"
+msgstr "Text"
+
+#: inc/class.frontpage_meta_box.php:110
+msgid "Icon"
+msgstr "Icon"
+
+#: inc/class.frontpage_meta_box.php:120
+msgid "Link to ..."
+msgstr "Link nach ..."
+
+# @ wirkungsstark
+#: inc/class.frontpage_meta_box.php:122
+msgid "Page"
+msgstr "Seite"
+
+#: inc/class.frontpage_meta_box.php:129 inc/class.slider_meta_box.php:85
+#: inc/class.slider_meta_box.php:108
+msgid "No page link"
+msgstr "Kein Seitenlink"
+
+#: inc/class.frontpage_meta_box.php:133
+msgid "or URL"
+msgstr "oder URL"
+
+#: inc/class.hide_page_in_primary_menu.php:32
+msgid "Hide page in primary menu"
+msgstr "Seite im Hauptmenü verstecken"
+
+#: inc/class.hide_page_in_primary_menu.php:53
+msgid "Hide"
+msgstr "Verstecken"
+
+#: inc/class.page_contact_meta_box.php:32
+msgid "Contact Person"
+msgstr "Kontaktperson"
+
+#: inc/class.slider_meta_box.php:40
+msgid "Buttons"
+msgstr "Buttons"
+
+#: inc/class.slider_meta_box.php:68
+msgid ""
+"You can setup one or two buttons. Once you have selected a page, the button "
+"will be displayed."
+msgstr ""
+"Sie können einen oder zwei Buttons definieren. Sobald Sie bei einem Button "
+"ein Seite ausgewählt haben, wird der Button angezeigt."
+
+#: inc/class.slider_meta_box.php:70
+msgid "Main button"
+msgstr "Haupt-Button"
+
+#: inc/class.slider_meta_box.php:77 inc/class.slider_meta_box.php:100
+msgid "Link to page"
+msgstr "Link zur Seite"
+
+#: inc/class.slider_meta_box.php:93
+msgid "Secondary button"
+msgstr "Zweiter Button"
+
+#: inc/template-tags.php:38 inc/template-tags.php:44
+msgid ", "
+msgstr ", "
+
+#: inc/template-tags.php:40
+#, php-format
+msgid "Posted in %1$s"
+msgstr "Publiziert in %1$s"
+
+#: inc/template-tags.php:46
+#, php-format
+msgid "Tagged %1$s"
+msgstr "Verschlagwortet %1$s"
+
+#: inc/template-tags.php:53
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+"Einen Kommentar hinterlassen<span class=\"screen-reader-text\"> auf %s</span>"
+
+# @ wirkungsstark
+#: template-parts/content-none.php:12
+msgid "Nothing Found"
+msgstr "Nichts gefunden"
+
+# @ wirkungsstark
+#: template-parts/content-none.php:19
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Entschuldigung, aber nichts entspricht Deinen gesuchten Begriffen. Bitte "
+"versuche es erneut mit anderen Schlagwörtern."
+
+# @ wirkungsstark
+#: template-parts/content-none.php:25
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Es scheint, dass wir nicht finden k&ouml;nnen wonach Du suchst. Eventuell "
+"kann eine Suche helfen."
+
+#: template-parts/content.php:44
+msgid "Tags:"
+msgstr "Schlagwörter:"
+
+#~ msgid "or"
+#~ msgstr "oder"
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid "Read more"
+#~ msgstr "Weiterlesen"
